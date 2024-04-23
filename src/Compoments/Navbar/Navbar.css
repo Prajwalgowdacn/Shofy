@@ -1,0 +1,114 @@
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    box-shadow: 1 1px 3px 2px black;
+    margin-top: 10px;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-menu{
+  list-style-type: none;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    color: rgb(91, 91, 91);
+    margin-right: 20px;
+    /* font-size: 20px;
+    font-weight: 500; */
+}
+.nav-menu li{
+  text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+.nav-menu hr{
+    border: none;
+    width: 80%;
+    height: 3px;
+    margin: 5px;
+    border-radius: 10px;
+    background: #ff0000;
+}
+Form{
+    
+    display: flex;
+    align-items: center;
+   
+    /* margin-top: 23px; */
+    /* gap: 10px; */
+}
+.search-bar{
+    width:400px !important;
+    height: 25px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgb(171, 171, 171);
+}
+.nav-wish-cart{
+    display: flex;
+    align-items: center;
+}
+.icon{
+    margin-right: 20px;
+}
+
+.nav-menu li {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .nav-menu li:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content ul {
+    list-style-type: none; /* Remove default list styles */
+    margin: 0;
+    padding: 5px;
+  }
+  
+  .dropdown-content ul li {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content ul li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .products-dropdown {
+    height: 300px;
+    overflow-y: auto; 
+  }
+  .nav-cart-count{
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -23px;
+    margin-left: -30px;
+    font-size: 14px;
+    background: #f64545;
+    color: #f9f9f9;
+    border-radius: 5px;
+  }
