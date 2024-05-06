@@ -1,7 +1,7 @@
 
 .navbar{
-    display: flex;
-    justify-content: space-around;
+    display: flex !important;
+    justify-content: space-around !important;
     padding: 16px;
     box-shadow: 1 1px 3px 2px black;
     margin-top: 10px;
@@ -40,7 +40,7 @@
 }
 Form{
     
-    display: flex;
+    /* display: flex; */
     align-items: center;
    
     /* margin-top: 23px; */

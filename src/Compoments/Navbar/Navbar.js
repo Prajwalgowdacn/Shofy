@@ -11,6 +11,19 @@ import { ShopContext } from '../../Context/ShopContext';
 export const Navbar = () => {
   const [menu,setMenu] =useState('home')
   const {getTotalCartItems}= useContext(ShopContext)
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+    // Perform any additional logout actions if needed
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const searchValue = event.target.elements.search.value;
+    window.location.href = `${searchValue}`;
+  };
+
   return (<div>
     <div className="container">
       <div className="navbar">
@@ -24,12 +37,14 @@ export const Navbar = () => {
           <li onClick={()=>{setMenu("kids")}}><Link style={{color: 'black'}} to='/kids'>Kids</Link> {menu==='kids'?<hr/>:<></>}</li>
          
         </ul>
-        <Form inline>
+        <Form inline onSubmit={handleSubmit}>
           <FormControl
             type="text"
             placeholder="Search"
             className="search-bar"
+            name='search'
           />
+            {/* <Button variant="outline-success">Search</Button> */}
         </Form>
         <div className="nav-wish-cart">
           <svg
@@ -136,6 +151,11 @@ export const Navbar = () => {
           </svg></Link>
           <div className="nav-cart-count">{getTotalCartItems()}</div>
         </div>
+        {isLoggedIn ? (
+              <button className='btn shadow' onClick={handleLogout}>Logout</button>
+            ) : (
+              <Link to='/login'><button className='btn shadow'>Login</button></Link>
+            )}
       </div>
     </div>
     {/* <Slider/> */}

@@ -153,8 +153,8 @@ export const Features = () => {
                     </span>
                   </div>
                   <div className="tp-feature-content-2">
-                    <h3 className="tp-feature-title-2 mx-2">Offer Discount</h3>
-                    <p className="mx-3">On every order over $140.00</p>
+                    <h3 className="tp-feature-title-2 mx-3">Offer Discount</h3>
+                    <p className="mx-2">On every order over $140.00</p>
                   </div>
                 </div>
               </div>

@@ -51,7 +51,7 @@
     justify-content: space-between;
     padding: 15px 0px;
 }
-.cartitems-total button{
+.cartitems-total Link button{
     width: 262px;
     height: 58px;
     outline: none;
